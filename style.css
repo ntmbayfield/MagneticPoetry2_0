@@ -1,19 +1,34 @@
-body { font-family: monospace; }
+body {
+  font-family: monospace;
+}
 
-.container {
-  background-image: url("https://image.ibb.co/bQfaPS/refrigdoor1.jpg");
-  background-size: 100% 100%;
+html {
+  background: url("https://image.ibb.co/bQfaPS/refrigdoor1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+}
+
+#container {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 0;
+  height: auto;
+  margin: 0px;
+  overflow: none;
+  padding: 0px;
+}
+
+div#container{
   width: 100%;
   height: 100%;
-  margin: auto;
-  overflow: scroll;
-  padding: 10px;
+  margin: 0px;
 }
 
 .draggable {
@@ -26,3 +41,52 @@ body { font-family: monospace; }
   z-index: 2; /* above other draggies */
 }
 .draggable.is-dragging { opacity: 0.7; }
+
+#chooseSet {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  z-index: 3;
+  display: inline-block;
+}
+
+#chooseNumOfWords {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 100px;
+  right: 60px;
+  z-index: 3;
+  display: inline-block;
+}
+
+#chooseFont {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 220px;
+  right: 60px;
+  z-index: 3;
+  display: inline-block;
+}
+
+input#chooseOriginal {
+  display: inline-block;
+}
+
+input#chooseGalvanize {
+  display: inline-block;
+}
+
+#makeNewSet {
+  background-color: blue;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 340px;
+  right: 60px;
+  z-index: 3;
+  display: inline-block
+}

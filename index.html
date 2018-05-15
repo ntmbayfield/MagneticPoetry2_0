@@ -11,12 +11,35 @@
     <script src="scripts/jquery-ui-1.12.1/jquery-ui.js"></script>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Indie+Flower" rel="stylesheet">
   </head>
+          <form id="chooseSet">
+            <p>Pick A Set:</p>
+            <input type="radio" id="chooseOriginal" name="wordSet" value="originalWordSet" checked/> Original<br>
+            <input type="radio" id="chooseGalvanize" name="wordSet" value="galvanizeWordSet"> Galvanize<br>
+          </form>
+          <form id="chooseNumOfWords">
+            <p>How Many Magnets Do You Want:</p>
+            <input type="radio" id="choose30" name="numWords" value="30" checked>30<br>
+            <input type="radio" id="choose60" name="numWords" value="60">60<br>
+          </form>
+          <form id="chooseFont">
+            <p>Which Font Do You Prefer:</p>
+            <input type="radio" id="fontStandard" name="font4set" value="Inconsolata" checked>Standard<br>
+            <input type="radio" id="fontFun" name="font4set" value="Indie Flower">Fun<br>
+          </form>
+
+          <button id="makeNewSet">Make New Magnet Set</button>
+          <button id="reset">Reset</button>
+          <button id="saveAndShare">Save & Share</button>
+
     <script src="scripts/draggabilly.pkgd.min.js"></script>
-    <script src="scripts/app.js"></script>
     <script src="wordSets/galvanize.js"></script>
+    <script src="wordSets/original.js"></script>
+    <script src="scripts/app.js"></script>
+
+
+
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </html>
