@@ -164,6 +164,11 @@ window.onload = function makeDraggableWords() {
       console.log("new word set is ", removed);
     });
 
+    $("#reset").on('click', function() {
+      $(".draggable").remove();
+      console.log("reset button was clicked");
+    });
+
 
     //utilize draggabilly library to make magnets draggable
       $(document).ready(function() {
