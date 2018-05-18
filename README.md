@@ -1,6 +1,7 @@
 This app is available online for use at http://www.magneticpoetry2_0.surge.sh.
 
 The mobile-friendly version of the app is available for use at http://www.mobilemp2_0.surge.sh.
+The repository for the mobile friendly version of the app is available on github by visiting https://www.github.com/ntmbayfield/mobileMP.
 
 
 About Magnetic Poetry 2.0:
