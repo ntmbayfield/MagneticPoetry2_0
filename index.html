@@ -43,30 +43,19 @@
 
           <button id="makeNewSet">Make New Magnet Set</button>
           <button id="reset">Reset</button>
-          <button id="addMagnet" onclick="document.getElementById('myModal').style.display='block'" >Add Magnet</button>
-
-          <div id="myModal" class="w3-modal">
-            <form>
-              <div class="w3-modal-content">
-                <div class="modal-container">
-                  <label for="customMagnetText">Enter Text for Your Magnet:</label>
-                  <input type="text" id="myPopupInput" name="customMagnetText">
-                  <button id="createMagnet" onclick="document.getElementById('myModal').style.display='none'" >Create</button>
-                </div>
-              </div>
-            </form>
-          </div>
-
-
-
-
-
+          <button id="addMagnet">Add Magnet</button>
 
     <script src="scripts/draggabilly.pkgd.min.js"></script>
     <script src="wordSets/galvanize.js"></script>
     <script src="wordSets/original.js"></script>
     <script src="index.js"></script>
 
+    <!-- JS dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <!-- bootbox code -->
+    <script src="bootbox.min.js"></script>
 
 
     <!--JavaScript at end of body for optimized loading-->

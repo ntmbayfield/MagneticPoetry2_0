@@ -13,6 +13,8 @@ p {
 html {
   background-image:  url("https://image.ibb.co/bQfaPS/refrigdoor1.jpg");
     background-size: cover;
+    width: 100%;
+    height: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -21,7 +23,7 @@ html {
 
 h1 {
   margin: auto;
-  width: 100%
+  width: auto;
   height: 40px;
   z-index: 3;
   text-align: center;
@@ -137,8 +139,4 @@ input#chooseGalvanize {
   background-color: white;
   border: solid 1px black;
   box-shadow: 5px 5px 2px grey;
-}
-
-#myModal {
-  display: none;
 }

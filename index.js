@@ -8,18 +8,10 @@ let wordList = galvanizeWordSet;
 let setSize = 30;
 let fontChoice = "Inconsolata";
 let removed = [];
+let cmText="";
 
 
 //------------------------------FUNCTION DECLARATIONS------------------------------
-//Function To Display Popup
-function div_show() {
-document.getElementById('abc').style.display = "block";
-}
-//Function to Hide Popup
-function div_hide(){
-document.getElementById('abc').style.display = "none";
-}
-
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -63,8 +55,8 @@ function createRefrigDoorAndDefaultWordSet() {
   removed = randomizedArray.splice(0, 60);
   for (let i=0; i<removed.length; i++) {
     let word=document.createElement('div');
-        word.style.top = getRandomInt(610, 700) +'px';
-        word.style.left = getRandomInt(220, 1200) + "px";
+        word.style.top = getRandomInt(550, 750) +'px';
+        word.style.left = getRandomInt(200, 920) + "px";
         word.style.zIndex = getRandomInt(0, 4);
     word.className = "draggable original";
     word.style.width = ((8 * removed[i].length)+10) + "px";
@@ -84,8 +76,8 @@ function createNewMagnetSet(wordLi, size, fontSelection) {
   removed = randomizedArray.splice(0, size);
   for (let i=0; i<removed.length; i++) {
     let word=document.createElement('div');
-        word.style.top = getRandomInt(610, 700) +'px';
-        word.style.left = getRandomInt(220, 1200) + "px";
+        word.style.top = getRandomInt(550, 750) +'px';
+        word.style.left = getRandomInt(200, 920) + "px";
         word.style.zIndex = getRandomInt(0, 4);
     word.className = "draggable additional";
     word.style.width = ((8 * removed[i].length)+10) + "px";
@@ -116,8 +108,8 @@ function createNewMagnetSet(wordLi, size, fontSelection) {
   function createCustomMagnet(customWord) {
       //create custom magnet
       let word=document.createElement('div');
-          word.style.top = getRandomInt(610, 700) +'px';
-          word.style.left = getRandomInt(220, 1200) + "px";
+          word.style.top = getRandomInt(450, 550) +'px';
+          word.style.left = getRandomInt(400, 650) + "px";
           word.style.zIndex = getRandomInt(0, 4);
       word.className = "draggable custom";
       word.style.width = ((8 * customWord.length)+10) + "px";
@@ -192,11 +184,16 @@ window.onload = function makeDraggableWords() {
       console.log("reset button was clicked");
     });
 
-    $('#createMagnet').on('click', function() {
-      var value = $('#myPopupInput').val();
-      var cmText=value;
-      console.log("text for magnet is ", cmText);
-      createCustomMagnet(cmText);
+    $("#addMagnet").on('click', function() {
+      var customMagnet = prompt("Enter desired text for magnet:", "");
+      if (customMagnet == null || customMagnet === "") {
+        console.log("User cancelled the prompt.");
+      } else {
+        cmText = customMagnet;
+        console.log("text for custom magnet is ", customMagnet);
+        createCustomMagnet(cmText);
+      }
+
     });
 
 
