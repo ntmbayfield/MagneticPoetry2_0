@@ -1,0 +1,27 @@
+{
+  "name": "magneticpoetry2_0",
+  "version": "1.0.0",
+  "description": "digital version of magnetic poetry",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntmbayfield/g88Q1Project.git"
+  },
+  "keywords": [
+    "magnetic",
+    "poetry"
+  ],
+  "author": "Nyiema Bayfield",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ntmbayfield/g88Q1Project/issues"
+  },
+  "homepage": "https://github.com/ntmbayfield/g88Q1Project#readme",
+  "dependencies": {
+    "casperjs": "^1.1.4",
+    "phantomjs": "^2.1.7"
+  }
+}
